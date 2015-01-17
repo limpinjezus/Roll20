@@ -1,0 +1,95 @@
+<rolltemplate class="sheet-rolltemplate-5e-stat-block">
+    <table>
+        <tr><div class="page-cap"></div></tr>
+    </table>
+    <table>        
+        <tr><th colspan="6">{{name}}</th></tr>
+        <tr>
+            <td colspan="6"><span class="monster-subheading">{{size}} {{type}}, {{alignment}}</span></td>
+        </tr>
+        <tr><td colspan="6"><div class="arrow-right"></div></dix></td></tr>
+        <tr>
+            <td colspan="6"><span  class="monster-section-1">Armor Class </span>{{ac}} {{#ac_note}} ({{ac_note}}) {{/ac_note}}</td>
+        </tr>
+        <tr>
+            <td colspan="6"><span  class="monster-section-1">Hit Points </span>{{hp}} ({{hd}}) {{#temp_hp}} <span  class="monster-section-1">Temp HP </span>{{temp_hp}} {{/temp_hp}}</td>
+        </tr>
+        <tr>
+            <td colspan="6"><span  class="monster-section-1">Speed </span>{{speed}}{{#fly}}, fly {{fly}}{{/fly}}{{#climb}}, climb {{climb}}{{/climb}}{{#swim}}, swim {{swim}}{{/swim}}</td>
+        </tr>
+        <tr><td colspan="6"><div class="arrow-right"></div></td></tr>
+
+        
+        <tr>
+          <td><div class="monster-stats">STR</div></td>
+          <td><div class="monster-stats">DEX</div></td>
+          <td><div class="monster-stats">CON</div></td>
+          <td><div class="monster-stats">INT</div></td>
+          <td><div class="monster-stats">WIS</div></td>
+          <td><div class="monster-stats">CHA</div></td>
+        </tr>
+       
+        <tr>
+          <td><div class="monster-stat">{{str}} ({{str_mod}})</div></td>
+          <td><div class="monster-stat">{{dex}} ({{dex_mod}})</div></td>
+          <td><div class="monster-stat">{{con}} ({{con_mod}})</div></td>
+          <td><div class="monster-stat">{{int}} ({{int_mod}})</div></td>
+          <td><div class="monster-stat">{{wis}} ({{wis_mod}})</div></td>
+          <td><div class="monster-stat">{{cha}} ({{cha_mod}})</div></td>
+        </tr>
+
+
+        <tr><td colspan="6"><div class="arrow-right"></div></td></tr>
+        <tr>
+            <td colspan="6"><span  class="monster-section-1">Saving Throws </span>STR {{str_save}}, DEX {{dex_save}}, CON {{con_save}}, INT {{int_save}}, WIS {{wis_save}}, CHA {{cha_save}} </td>
+        </tr>
+        {{#damage_resistance}}
+        <tr>
+            <td colspan="6"><span  class="monster-section-1">Damage Resistance </span>{{damage_resistance}}</td>
+        </tr>
+        {{/damage_resistance}}
+        {{#damage_vulnerability}}
+        <tr>
+            <td colspan="6"><span  class="monster-section-1">Damage Vulnerability </span>{{damage_vulnerability}}</td>
+        </tr>
+        {{/damage_vulnerability}}
+        {{#damage_immunity}}
+        <tr>
+            <td colspan="6"><span  class="monster-section-1">Damage Immunity </span>{{damage_immunity}}</td>
+        </tr>
+        {{/damage_immunity}}
+        {{#condition_immunity}}
+        <tr>
+            <td colspan="6"><span  class="monster-section-1">Condition Immunity </span>{{condition_immunity}}</td>
+        </tr>
+        {{/condition_immunity}}
+        <tr>
+            <td colspan="6"><span  class="monster-section-1">Skills </span>Passive Perception {{passive_perception}}, Acrobatics {{acrobatics}}, </td>
+        </tr>
+        <tr>
+            <td colspan="6"><span  class="monster-section-1">Senses </span>{{senses}}</td>
+        </tr>
+        <tr>
+            <td colspan="6"><span  class="monster-section-1">Languages </span>{{languages}}</td>
+        </tr>
+        <tr>
+            <td colspan="6"><span  class="monster-section-1">Challenge </span>{{challenge}} ({{xp}} XP)</td>
+        </tr>
+        <tr><td colspan="6"><div class="arrow-right"></div></td></tr>
+        <tr>
+            <td colspan="6"><span class="monster-section-2">{{traits}}</span></td>
+        </tr>
+        <tr>
+            <td colspan="6"><span class="ah3">Actions</span></td>
+        </tr>
+        <tr><td colspan="6"><div class="line"></div></td></tr>
+        {{#multiattack}}
+        <tr><td colspan="6"><span class="monster-section-2">**Multiattack.** {{multiattack}}</span></td></tr>
+        {{/multiattack}}
+        <tr><td colspan="6"><span class="monster-section-2">**{{action1_name}}.** {{action1_type}} {{action1_description}} {{action1_effect}}</span></td></tr>
+        <tr><td colspan="6"><span class="monster-section-2">**{{action2_name}}.** {{action2_type}} {{action2_description}} {{action2_effect}}</span></td></tr>
+    </table>
+    <table>
+        <tr><div class="page-cap"></div></tr>
+    </table>
+</rolltemplate>
