@@ -4,7 +4,6 @@
     text-align:left;
     width: 300px;
     background:  #FDF1DC;
-    padding: 0.6em;
     border: 1px #DDD solid;
     box-shadow: 0 0 1.5em #867453;
     position: relative;
@@ -12,27 +11,26 @@
     margin-left: 2px;
     margin-right: 2px;
     display:table;
+    color: #5E2424;
 }
 
 .sheet-rolltemplate-5e-stat-block th {
     font-family: 'Lora', 'Calisto MT', 'Bookman Old Style', Bookman,
                     'Goudy Old Style', Garamond, 'Hoefler Text',
                     'Bitstream Charter', Georgia, serif;
-    color: #5E2424;
+    text-indent: 2px;
     font-weight: 700;
-    margin-top: -6px;
-    margin-bottom: -2px;
     font-size: 1.5em;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     font-variant: small-caps;    
 }
 
 .sheet-rolltemplate-5e-stat-block .sheet-ah3 {
     font-family:arial;
     font-size:1.5em;
-    color: #5E2424;
     font-variant: small-caps;
     font-weight: bold;
+    margin-left: 3px;
 }
 
 .sheet-rolltemplate-5e-stat-block .sheet-ah3:first-letter {
@@ -40,6 +38,7 @@
 }
 
 .sheet-rolltemplate-5e-stat-block .sheet-monster-subheading {
+    color: black;
     font-weight: normal;
     font-style: italic;
     font-size: .9em;
@@ -47,27 +46,25 @@
 }
 
 .sheet-rolltemplate-5e-stat-block .sheet-arrow-right {
+    margin-left: 2px;
     border-top: 3px solid transparent;
     border-bottom: 3px solid transparent;
     border-left: 290px solid #7A200D;
 }
 
 .sheet-rolltemplate-5e-stat-block .sheet-monster-section-1 {
-    color: #5E2424;
-    text-indent: -1em;
-    /*margin-left: 0.4em;*/    
-    margin: 2px 5px 2px 5px;
-    display: inline;
-    font-weight: bold;
+    text-indent: -.9em;
+    margin-left: 15px;
+    display: block;
 }
 
 .sheet-rolltemplate-5e-stat-block .sheet-monster-section-2 {
+    color: black;
     display: block;
     margin: 2px 5px 2px 5px;
 }
 
 .sheet-rolltemplate-5e-stat-block .sheet-monster-stats {
-    color: #5E2424;
     font-weight: bold;
     text-align: center;
 }
@@ -79,15 +76,23 @@
 .sheet-rolltemplate-5e-stat-block .inlinerollresult {
 	text-align: center;
     background-color: transparent;
-    border-style: none;
+    border: 0 none transparent;
     font-weight: normal;
+    font-size: inherit;
+    padding: 0 0 0 0;
 }
+
+/*.sheet-rolltemplate-5e-stat-block ::before {
+   content:"+"; 
+}*/
 
 .sheet-rolltemplate-5e-stat-block .sheet-line {
     height: 1px;
     background: #7A200D;
     position: relative;
     z-index: 1;
+    margin-left: 3px;
+    margin-right: 3px;
 }
 
 .sheet-rolltemplate-5e-stat-block .sheet-page-cap {
