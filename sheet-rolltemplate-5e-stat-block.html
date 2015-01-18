@@ -12,7 +12,7 @@
             <td colspan="6"><span  class="monster-section-1">**Armor Class** {{ac}} {{#ac_note}}({{ac_note}} ){{/ac_note}}</span></td>
         </tr>
         <tr>
-            <td colspan="6"><span  class="monster-section-1">**Hit Points** {{hp}} ({{hd}} ) {{#temp_hp}} **Temp HP** {{temp_hp}} {{/temp_hp}}</span></td>
+            <td colspan="6"><span  class="monster-section-1">**Hit Points** {{hp}} ({{hd}} ) {{#temp_hp}} **Temp HP** {{temp_hp}}{{/temp_hp}}</span></td>
         </tr>
         <tr>
             <td colspan="6"><span  class="monster-section-1">**Speed** {{speed}}{{#fly}}, fly {{fly}}{{/fly}}{{#climb}}, climb {{climb}}{{/climb}}{{#swim}}, swim {{swim}}{{/swim}}</span></td>
@@ -41,7 +41,7 @@
 
         <tr><td colspan="6"><div class="arrow-right"></div></td></tr>
         <tr>
-            <td colspan="6"><span  class="monster-section-1">**Saving Throws** STR {{str_save}}, DEX {{dex_save}}, CON {{con_save}}, INT {{int_save}}, WIS {{wis_save}}, CHA {{cha_save}}</span></td>
+            <td colspan="6"><span  class="monster-section-1">**Saving Throws** {{#str_save}}STR {{str_save}}{{/str_save}}{{#dex_save}}, DEX {{dex_save}}{{/dex_save}}{{#con_save}}, CON {{con_save}}{{/con_save}}{{#int_save}}, INT {{int_save}}{{/int_save}}{{#wis_save}}, WIS {{wis_save}}{{/wis_save}}{{#cha_save}}, CHA {{cha_save}}{{/cha_save}}</span></td>
         </tr>
         {{#damage_resistance}}
         <tr>
@@ -64,10 +64,10 @@
         </tr>
         {{/condition_immunity}}
         <tr>
-            <td colspan="6"><span  class="monster-section-1">**Skills** Acrobatics {{acrobatics}}, </span></td>
+            <td colspan="6"><span  class="monster-section-1">**Skills** {{#acrobatics}}Acrobatics {{acrobatics}}{{/acrobatics}}{{#animal_handling}}, Animal Handling  {{animal_handling}}{{/animal_handling}}{{#arcana}}, Arcana {{arcana}}{{/arcana}}{{#athletics}}, {{athletics}}{{/athletics}}{{#deception}}, Deception {{deception}}{{/deception}}{{#history}}, History {{history}}{{/history}}{{#insight}}, Insight {{insight}}{{/insight}}{{#intimidation}}, Intimidation {{intimidation}}{{/intimidation}}{{#investigation}}, Investigation {{investigation}}{{/investigation}}{{#medicine}}, Medicine {{medicine}}{{/medicine}}{{#nature}}, Nature {{nature}}{{/nature}}{{#perception}}, Perception {{perception}}{{/perception}}{{#persuasion}}, Persuasion {{persuasion}}{{/persuasion}}{{#religion}}, Religion {{religion}}{{/religion}}{{#sleight_of_hand}}, Sleight of Hand {{sleight_of_hand}}{{/sleight_of_hand}}{{#stealth}}, Stealth {{stealth}}{{/stealth}}{{#survival}}, Survival {{survival}}{{/survival}}</span></td>
         </tr>
         <tr>
-            <td colspan="6"><span  class="monster-section-1">**Senses** passive Perception {{passive_perception}}, {{senses}}</span></td>
+            <td colspan="6"><span  class="monster-section-1">**Senses** passive Perception {{passive_perception}}{{#senses}}, {{senses}}{{/senses}}</span></td>
         </tr>
         <tr>
             <td colspan="6"><span  class="monster-section-1">**Languages** {{languages}}</span></td>
@@ -77,7 +77,7 @@
         </tr>
         <tr><td colspan="6"><div class="arrow-right"></div></td></tr>
         <tr>
-            <td colspan="6"><span class="monster-section-2">{{traits}}</span></td>
+            <td colspan="6"><span class="monster-section-2">{{#traits}}{{traits}}{{/traits}}</span></td>
         </tr>
         <tr>
             <td colspan="6"><span class="ah3">Actions</span></td>
@@ -86,8 +86,33 @@
         {{#multiattack}}
         <tr><td colspan="6"><span class="monster-section-2">** *Multiattack.* ** {{multiattack}}</span></td></tr>
         {{/multiattack}}
+        {{#action1_name}}
         <tr><td colspan="6"><span class="monster-section-2">** *{{action1_name}}.* ** {{action1_type}} {{action1_description}} {{action1_effect}}</span></td></tr>
+        {{/action1_name}}
+        {{#action2_name}}
         <tr><td colspan="6"><span class="monster-section-2">** *{{action2_name}}.* ** {{action2_type}} {{action2_description}} {{action2_effect}}</span></td></tr>
+        {{/action2_name}}
+        {{#action3_name}}
+        <tr><td colspan="6"><span class="monster-section-2">** *{{action3_name}}.* ** {{action3_type}} {{action3_description}} {{action3_effect}}</span></td></tr>
+        {{/action3_name}}
+        {{#action4_name}}
+        <tr><td colspan="6"><span class="monster-section-2">** *{{action4_name}}.* ** {{action4_type}} {{action4_description}} {{action4_effect}}</span></td></tr>
+        {{/action4_name}}
+        {{#action5_name}}
+        <tr><td colspan="6"><span class="monster-section-2">** *{{action5_name}}.* ** {{action5_type}} {{action5_description}} {{action5_effect}}</span></td></tr>
+        {{/action5_name}}
+        {{#action6_name}}
+        <tr><td colspan="6"><span class="monster-section-2">** *{{action6_name}}.* ** {{action6_type}} {{action6_description}} {{action6_effect}}</span></td></tr>
+        {{/action6_name}}
+        {{#action7_name}}
+        <tr><td colspan="6"><span class="monster-section-2">** *{{action7_name}}.* ** {{action7_type}} {{action7_description}} {{action7_effect}}</span></td></tr>
+        {{/action7_name}}
+        {{#action8_name}}
+        <tr><td colspan="6"><span class="monster-section-2">** *{{action8_name}}.* ** {{action8_type}} {{action8_description}} {{action8_effect}}</span></td></tr>
+        {{/action8_name}}
+        {{#action9_name}}
+        <tr><td colspan="6"><span class="monster-section-2">** *{{action9_name}}.* ** {{action9_type}} {{action9_description}} {{action9_effect}}</span></td></tr>
+        {{/action9_name}}
     </table>
     <table>
         <tr><div class="page-cap"></div></tr>
